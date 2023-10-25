@@ -180,6 +180,10 @@ body {
   background-color: var(--white);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   height: 100%;

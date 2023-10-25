@@ -1,0 +1,76 @@
+#projectmanagement {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 8rem;
+}
+
+#worktogether {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 3rem;
+}
+
+#customiseittoyourneeds {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.main-content  {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+
+.solutions-section__left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.solutions-section__left-content h1 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  color: var(--black);
+  font-weight: 700;
+}
+
+.solutions-section__left-content p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.solutions-section__left-content button {
+  width: fit-content;
+}
+
+.solutions_section--banner {
+  width: clamp(300px, 100%, 748px);
+}
+
+@media (max-width: 1024px){
+  #projectmanagement {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #worktogether {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #customiseittoyourneeds {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-content {
+    gap: 10rem;
+  }
+
+  .solutions-section__left-content {
+    align-items: center;
+  }
+}

@@ -1,3 +1,7 @@
+.contact_wrapper_container {
+    height: 100%;
+    margin-top: 5rem;
+}
 
 #feedback_form_container{
     display: flex;
@@ -7,31 +11,53 @@
     padding: 10px;
 }
 
+#feedback_form_container h2{
+    font-size: clamp(2.5rem, 4vw, 3rem);
+    width: 800px;
+  }
+  
+  #feedback_form_container h2 span {
+  color: var(--primary-color-2);
+}
+
 #feedback_form_container form{
     display: grid;
     column-gap: 5px;
     height: fit-content;
-}
-
-#feedback_form_container form > #cli_name{
+    margin-top: 4rem;
+  }
+  
+  #feedback_form_container form > #cli_name{
     grid-row: 2;
     grid-column-start: 1;
     grid-column-end: 2;
-}
-
-#feedback_form_container form > #cli_surname{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  #feedback_form_container form > #cli_surname{
     grid-row: 2;
     grid-column-start: 2;
     grid-column-end: 3;
-}
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
 
-#feedback_form_container form > #cli_email{
+  #feedback_form_container form > #cli_email{
     grid-row: 4;
     grid-column-start: 1;
     grid-column-end: 3;
-}
-
-#feedback_form_container form > #contact_message{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  #feedback_form_container form > #contact_message{
     grid-row: 6;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -40,18 +66,24 @@
     /* Move the text to the top left of the input box */
     box-sizing: border-box;
     vertical-align: top;
-    padding: 10px;
-}
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    resize: none;
+    border: 1px solid #ccc;
+  }
 
 #feedback_form_container form > #send{
     margin-top: 5px;
     width: 80px;
     border-radius: 8px;
-    border-width: 1px;
     margin-left: auto;
-    background-color: #dcf0fa;
+    background-color: var(--primary-color-2);
     grid-column: 2;
     grid-row: 8;
+    padding: 0.5rem 1rem;
+    color: #FFFFFF;
+    border: 0;
 }
 
 #feedback_form_container form > label{

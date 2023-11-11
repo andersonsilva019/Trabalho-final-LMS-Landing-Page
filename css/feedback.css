@@ -1,0 +1,98 @@
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1{
+    font-size: 42px;
+    margin-bottom: 30px;
+    padding: 0 2rem;
+}
+
+.feedback_wrapper_container {
+    height: 100%;
+    margin-top: 5rem;
+}
+
+
+#feedback_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 1100px) {
+ 
+    #feedback_container{
+        flex-direction: column;
+    }
+    .feedback_wrapper_container{
+        height: fit-content;
+    }
+}
+
+.comment_card{
+    display: grid;
+    gap: 10px;
+    margin: 10px;
+    background-color: var(--primary-color-2);
+    height: 360px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.comment_card img{
+    background-color: var(--primary-color-1);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.comment_card p{
+    font-size: 13px;
+    color: white;
+}
+
+.comment_card::-webkit-scrollbar {
+    width: 5px;
+}
+  
+.comment_card::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+  
+.comment_card::-webkit-scrollbar-thumb {
+    background: var(--primary-color-1);
+    border-radius: 10px;
+}
+
+#first_comment{
+    background-color: whitesmoke;
+}
+
+#first_comment p{
+    color: black;
+}
+
+#pages_container button{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    color: var(--primary-color-2);
+    background-color: #dcf0fa;
+    font-weight: bolder;
+    font-size: 25px;
+    border-style: none;
+    margin: 50px;
+    transition: 400ms;
+}
+
+#pages_container button:hover{
+    cursor: pointer;
+    background-color: #c8d8e0;
+}

@@ -47,7 +47,7 @@ function scrollComentsForward(){
 }
 
 function scrollComentsBack(){
-    currPage = (currPage - 1 < 0 ? comments.length-1 : currPage - 1);
+    currPage = (currPage - 1 + comments.length) % comments.length;
 
 
     let itensToShow = [

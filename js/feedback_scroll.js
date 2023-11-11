@@ -1,5 +1,5 @@
 
-var currPage = 0;
+var currentPage = 0;
 
 var comments = [
     {
@@ -33,27 +33,27 @@ var comments = [
 ]
 
 
-function scrollComentsForward() {
-    currPage = (currPage + 1) % comments.length;
+function scrollCommentsForward() {
+    currentPage = (currentPage + 1) % comments.length;
 
     let itensToShow = [
-        comments[currPage],
-        comments[(currPage + 1) % comments.length],
-        comments[(currPage + 2) % comments.length]
+        comments[currentPage],
+        comments[(currentPage + 1) % comments.length],
+        comments[(currentPage + 2) % comments.length]
     ];
 
     displayAtContainer(itensToShow);
 
 }
 
-function scrollComentsBack() {
-    currPage = (currPage - 1 + comments.length) % comments.length;
+function scrollCommentsBack() {
+    currentPage = (currentPage - 1 + comments.length) % comments.length;
 
 
     let itensToShow = [
-        comments[currPage],
-        comments[(currPage - 1 + comments.length) % comments.length],
-        comments[(currPage - 2 + comments.length) % comments.length]
+        comments[currentPage],
+        comments[(currentPage - 1 + comments.length) % comments.length],
+        comments[(currentPage - 2 + comments.length) % comments.length]
     ];
 
     displayAtContainer(itensToShow);

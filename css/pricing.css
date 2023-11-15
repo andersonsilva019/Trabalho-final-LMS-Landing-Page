@@ -71,14 +71,13 @@ main {
 
 .article-div-pricings:hover {
     transform: scale(1.06);
-    border: 1px solid var(--yellow);
+    border: 2px solid var(--yellow);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     color: var(--primary-color-1);
 }
 
 .plano {
-    background-color: var(--white2);
-    border: 1px solid var(--white2);
+    background-color: var(--white);
     border-radius: 20px;
     text-align: left;
     padding: 5% 0% 5% 5%;
@@ -111,6 +110,7 @@ h5 {
 .btn-plano:hover {
     background-color: var(--primary-color-2);
     color: var(--white);
+    border:2px solid var(--yellow) ;
 }
 
 footer {

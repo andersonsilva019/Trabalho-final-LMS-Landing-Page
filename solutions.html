@@ -42,7 +42,36 @@
         <li class="header-nav-list__item"><a href="/contact.html">Contato</a></li>
       </ul>
       <div class="header-group-buttons">
-        <button class="btn-login">Login</button>
+        <button id="openModalBtn" class="btn-login">Login</button>
+          <!-- Conteúdo do meu modal do Login -->
+          <div id="modal" class="modal-container">
+            <div class="modal-content">
+              <span id="closeModalBtn" class="close">&times;</span>
+              <img src="images/logo.svg" alt="Logo WhiteSpace" id="img-modal">
+              <form>
+                <input type="text" id="username" name="username"
+                  placeholder="Usuário" required>
+
+                <input type="password" id="password" name="password"
+                  placeholder="Senha" required>
+
+                <button class="btn-form-login" type="submit">Entrar</button>
+              </form>
+              <p>Ou prossiga com:</p>
+
+              <button class="social-btn"><img src="images/icons/google.png" alt><strong>Google </strong></button>
+              <button class="social-btn"><img src="images/icons/microsoft.png" alt=""><strong>Microsoft</strong></button>
+              
+              <a href="#" class="duvidaModal">Não consegue entrar?</a>
+              <a href="#" class="duvidaModal">Criar uma conta</a>
+
+              <hr class="linhaModal">
+              <div id="img-modal-pbaixo">
+                <img src="images/logo-white.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Fim do conteúdo do meu modal -->
         <button class="btn-try">
           Teste whitespace de graça
           <img src="images/icons/arrow-right.svg" alt="arrow-right-icon">
@@ -118,6 +147,7 @@
     </div>
   </footer>
   <script src="js/open-close-menu.js"></script>
+  <script src="js/modal-login.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="js/get-weather.js"></script>
 </body>

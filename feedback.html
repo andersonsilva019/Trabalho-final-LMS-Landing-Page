@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avaliações | WhiteSpace</title>
+  <title>Avaliações | Whitepace</title>
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/feedback.css">
+  <script src="js/feedback_scroll.js"></script>
 </head>
 
 <body>
@@ -73,27 +74,92 @@
           </div>
           <!-- Fim do conteúdo do meu modal -->
         <button class="btn-try">
-          Teste whitespace de graça
+          Teste whitepace de graça
           <img src="images/icons/arrow-right.svg" alt="arrow-right-icon">
         </button>
+        <div class="header-weather"></div>
       </div>
       <button class="btn-menu-open">
         <img src="images/icons/menu.svg" alt="Menu" />
       </button>
     </nav>
   </header>
-  <main>
+  <main class="feedback_wrapper_container">
 
+    <h1> Veja o que nossos usuários falam sobre o whitepace</h1>
+    <div id="feedback_container">
+      
+      <div class="comment_card" id="first_comment">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrT_BjEyf_LEpcvb225JX2qFCJcLz5-0RXLg&usqp=CAU">
+        <p> 
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+          sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+
+        <div>
+          <p style="font-weight: bolder;">USERNAME</p>
+          <p> FOUNDER, arceus co. ltd. </p>
+        </div>
+      </div>
+
+      <div class="comment_card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrT_BjEyf_LEpcvb225JX2qFCJcLz5-0RXLg&usqp=CAU">
+        <p> 
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+          sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+
+        <div>
+          <p style="font-weight: bolder;">USERNAME</p>
+          <p> FOUNDER, arceus co. ltd. </p>
+        </div>
+      </div>
+
+      <div class="comment_card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrT_BjEyf_LEpcvb225JX2qFCJcLz5-0RXLg&usqp=CAU">
+        <p> 
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+          sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+
+        <div>
+          <p style="font-weight: bolder;">USERNAME</p>
+          <p> FOUNDER, arceus co. ltd. </p>
+        </div>
+      </div>
+
+      <!-- END feedback_container-->
+    </div> 
+  
+
+    <div id="pages_container">
+      <button onclick="scrollCommentsBack()"> << </button>
+      <button onclick="scrollCommentsForward()"> >> </button>
+    </div>
   </main>
   <footer>
     <img src="/images/logo-white.svg" alt="">
     <div>
       Desenvolvedores: <a href="https://github.com/andersonsilva019">Anderson Silva</a> <a
-        href="https://github.com/andersonsilva019">Michel Oliveira</a> <a
-        href="https://github.com/andersonsilva019">Gabriel Moreira</a>
+        href="https://github.com/MichelOS-Dev">Michel Oliveira</a> <a
+        href="https://github.com/Ortroller">Gabriel Moreira</a>
     </div>
   </footer>
   <script src="js/open-close-menu.js"></script>
   <script src="js/modal-login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="js/get-weather.js"></script>
 </body>
 </html>

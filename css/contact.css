@@ -14,7 +14,9 @@
 #feedback_form_container h2{
     font-size: clamp(2.5rem, 4vw, 3rem);
     width: 100%;
+    max-width: 800px;
     padding: 0 1.5rem;
+    text-align: center;
   }
   
   #feedback_form_container h2 span {
